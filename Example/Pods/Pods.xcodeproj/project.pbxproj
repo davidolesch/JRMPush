@@ -11,7 +11,7 @@
 		4EEFFB048C103A996E573F47 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACC25B76232EE10AA2A2B76 /* Foundation.framework */; };
 		6D082EBD00A4DEAED24A1FFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CACC25B76232EE10AA2A2B76 /* Foundation.framework */; };
 		CA94DAA50EAB1BF0B3E3D411 /* Pods-JRMPush-JRMPush-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E01A0AC1E4DF2BF4120ECDA /* Pods-JRMPush-JRMPush-dummy.m */; };
-		D376C2B11A97C2C600113B1F /* JRMPushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D376C2B01A97C2C600113B1F /* JRMPushHandler.m */; };
+		D376C2B41A97C37500113B1F /* JRMPushHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D376C2B31A97C37500113B1F /* JRMPushHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +45,8 @@
 		B0BE0EAC6D0289D6717C7901 /* Pods-JRMPush-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JRMPush-resources.sh"; sourceTree = "<group>"; };
 		C132AD241A2CB1FA49D8FC55 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CACC25B76232EE10AA2A2B76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D376C2AF1A97C2C600113B1F /* JRMPushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMPushHandler.h; sourceTree = "<group>"; };
-		D376C2B01A97C2C600113B1F /* JRMPushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMPushHandler.m; sourceTree = "<group>"; };
+		D376C2B21A97C37500113B1F /* JRMPushHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRMPushHandler.h; path = Pod/Classes/JRMPushHandler.h; sourceTree = "<group>"; };
+		D376C2B31A97C37500113B1F /* JRMPushHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRMPushHandler.m; path = Pod/Classes/JRMPushHandler.m; sourceTree = "<group>"; };
 		E7B1688D906C0027DF3B5D1F /* Pods-JRMPush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JRMPush.release.xcconfig"; sourceTree = "<group>"; };
 		EF332A913D72E5DE28AD260C /* Pods-JRMPush-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JRMPush-environment.h"; sourceTree = "<group>"; };
 		FF209B28AC0406ACEF821B4F /* Pods-JRMPush-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JRMPush-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -142,8 +142,8 @@
 		CB0B2D98789E33139F1F82A6 /* JRMPush */ = {
 			isa = PBXGroup;
 			children = (
-				D376C2AF1A97C2C600113B1F /* JRMPushHandler.h */,
-				D376C2B01A97C2C600113B1F /* JRMPushHandler.m */,
+				D376C2B21A97C37500113B1F /* JRMPushHandler.h */,
+				D376C2B31A97C37500113B1F /* JRMPushHandler.m */,
 				D73F6535A1422B4A9097E540 /* Support Files */,
 			);
 			name = JRMPush;
@@ -266,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D376C2B11A97C2C600113B1F /* JRMPushHandler.m in Sources */,
+				D376C2B41A97C37500113B1F /* JRMPushHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
