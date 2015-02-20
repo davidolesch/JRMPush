@@ -4,6 +4,8 @@
 [![License](https://img.shields.io/cocoapods/l/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 [![Platform](https://img.shields.io/cocoapods/p/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 
+![](https://raw.githubusercontent.com/davidolesch/JRMPush/master/ClassAnnouncement.gif)
+
 ## Usage
 
 Install this library through [CocoaPods](http://cocoapods.org) and then replace your app code which handles the push notification userInfo dictionary with 
