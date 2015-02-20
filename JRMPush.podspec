@@ -21,10 +21,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'JRMPush' => ['Pod/Assets/*.png']
-  }
+  s.source_files = 'JRMPush/*.{h,m}'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'SVWebViewController', '~> 1.0'
