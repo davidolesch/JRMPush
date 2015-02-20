@@ -1,15 +1,20 @@
 # JRMPush
 
-[![CI Status](http://img.shields.io/travis/David Olesch/JRMPush.svg?style=flat)](https://travis-ci.org/David Olesch/JRMPush)
 [![Version](https://img.shields.io/cocoapods/v/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 [![License](https://img.shields.io/cocoapods/l/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 [![Platform](https://img.shields.io/cocoapods/p/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Install this library through [CocoaPods](http://cocoapods.org) and then replace your app code which handles the push notification userInfo dictionary with 
+
+```
+[[JRMPushHandler sharedInstance] handlePush:userInfo].
+```
 
 ## Requirements
+
+requires 'SVWebViewController', '~> 1.0'
 
 ## Installation
 
