@@ -10,15 +10,21 @@
 Pod::Spec.new do |s|
   s.name             = "JRMPush"
   s.version          = "0.1.0"
-  s.summary          = "Show a web page when a push is received with a URL in its metadata."
-  s.homepage         = "https://github.com/davidolesch/JRMPush"
+  s.summary          = "A short description of JRMPush."
+  s.description      = <<-DESC
+                       An optional longer description of JRMPush
+
+                       * Markdown format.
+                       * Don't worry about the indent, we strip it!
+                       DESC
+  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JRMPush"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "David Olesch" => "david@jackrabbitmobile.com" }
-  s.source           = { :git => "https://github.com/davidolesch/JRMPush.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/davidolesch'
+  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JRMPush.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.platform     = :ios, '6.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
@@ -27,5 +33,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.dependency 'SVWebViewController', '~> 1.0'
+  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
 end
