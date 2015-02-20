@@ -8,7 +8,7 @@
 
 Install this library through [CocoaPods](http://cocoapods.org) and then replace your app code which handles the push notification userInfo dictionary with 
 
-```
+```obj-c
 [[JRMPushHandler sharedInstance] handlePush:userInfo].
 ```
 
