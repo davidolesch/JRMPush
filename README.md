@@ -14,6 +14,8 @@ Install this library through [CocoaPods](http://cocoapods.org) and then replace 
 [[JRMPushHandler sharedInstance] handlePush:userInfo].
 ```
 
+JRMPushHandler is documented [here](http://cocoadocs.org/docsets/JRMPush/0.1.0/Classes/JRMPushHandler.html).
+
 ## Requirements
 
 requires 'SVWebViewController', '~> 1.0'

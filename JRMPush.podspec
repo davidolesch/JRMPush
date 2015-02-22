@@ -1,18 +1,9 @@
-#
-# Be sure to run `pod lib lint JRMPush.podspec' to ensure this is a
-# valid spec and remove all comments before submitting the spec.
-#
-# Any lines starting with a # are optional, but encouraged
-#
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "JRMPush"
   s.version          = "0.1.0"
   s.summary          = "Show a web page when a push is received with a URL in its metadata."
   s.homepage         = "https://github.com/davidolesch/JRMPush"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "https://raw.githubusercontent.com/davidolesch/JRMPush/master/ClassAnnouncement.gif"
   s.license          = 'MIT'
   s.author           = { "David Olesch" => "david@jackrabbitmobile.com" }
   s.source           = { :git => "https://github.com/davidolesch/JRMPush.git", :tag => s.version.to_s }
