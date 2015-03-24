@@ -29,7 +29,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-David Olesch, david@jackrabbitmobile.com
+David Olesch, david@jackrabbitmobile.com and @DavidOlesch on Twitter.
 
 ## License
 
