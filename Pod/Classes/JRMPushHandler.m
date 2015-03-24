@@ -30,13 +30,20 @@
 - (void)handlePush:(NSDictionary *)userInfo
 {
     self.alertViewUserInfo = userInfo;
-    NSString *targetName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
     
     if ([userInfo objectForKey:@"url"] == nil) {
-        [[[UIAlertView alloc] initWithTitle:targetName message:userInfo[@"aps"][@"alert"] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+        [self showAlertWithMessage:userInfo[@"aps"][@"alert"] andOtherButtonTitles:nil];
     }
     else {
-        [[[UIAlertView alloc] initWithTitle:targetName message:userInfo[@"aps"][@"alert"] delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"View", nil] show];
+        [self showAlertWithMessage:userInfo[@"aps"][@"alert"] andOtherButtonTitles:@[@"View"]];
+    }
+}
+
+- (void)showAlertWithMessage:(NSString *)message andOtherButtonTitles:(NSArray *)otherButtonTitles {
+    NSString *targetName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:targetName message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    for (NSString *buttonTitle in otherButtonTitles) {
+        [alertView addButtonWithTitle:buttonTitle];
     }
 }
 

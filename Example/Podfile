@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+
+target 'JRMPush', :exclusive => true do
+  pod "JRMPush", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'OCMock'
+end
