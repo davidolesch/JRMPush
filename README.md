@@ -3,6 +3,7 @@
 [![Version](https://img.shields.io/cocoapods/v/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 [![License](https://img.shields.io/cocoapods/l/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
 [![Platform](https://img.shields.io/cocoapods/p/JRMPush.svg?style=flat)](http://cocoadocs.org/docsets/JRMPush)
+[![Build Status](https://travis-ci.org/davidolesch/JRMPush.svg?branch=travis-ci-updates)](https://travis-ci.org/davidolesch/JRMPush)
 
 ![](https://raw.githubusercontent.com/davidolesch/JRMPush/master/ClassAnnouncement.gif)
 
