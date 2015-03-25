@@ -1,7 +1,7 @@
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface JRMPushHandler (Testing)
 
-- (void)showAlertWithMessage:(NSString *)message andOtherButtonTitles:(NSArray *)otherButtonTitles;
+- (UIAlertView *)alertViewForMessage:(NSString *)message andOtherButtonTitles:(NSArray *)otherButtonTitles;
 
 @end
