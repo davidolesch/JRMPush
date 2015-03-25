@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JRMPush"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Show a web page when a push is received with a URL in its metadata."
   s.homepage         = "https://github.com/davidolesch/JRMPush"
   s.screenshots      = "https://raw.githubusercontent.com/davidolesch/JRMPush/master/ClassAnnouncement.gif"
