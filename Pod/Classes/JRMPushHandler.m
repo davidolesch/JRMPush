@@ -31,20 +31,23 @@
 {
     self.alertViewUserInfo = userInfo;
     
+    UIAlertView *alertView;
     if ([userInfo objectForKey:@"url"] == nil) {
-        [self showAlertWithMessage:userInfo[@"aps"][@"alert"] andOtherButtonTitles:nil];
+        alertView = [self alertViewForMessage:userInfo[@"aps"][@"alert"] andOtherButtonTitles:nil];
     }
     else {
-        [self showAlertWithMessage:userInfo[@"aps"][@"alert"] andOtherButtonTitles:@[@"View"]];
+        alertView = [self alertViewForMessage:userInfo[@"aps"][@"alert"] andOtherButtonTitles:@[@"View"]];
     }
+    [alertView show];
 }
 
-- (void)showAlertWithMessage:(NSString *)message andOtherButtonTitles:(NSArray *)otherButtonTitles {
+- (UIAlertView *)alertViewForMessage:(NSString *)message andOtherButtonTitles:(NSArray *)otherButtonTitles {
     NSString *targetName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleName"];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:targetName message:message delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     for (NSString *buttonTitle in otherButtonTitles) {
         [alertView addButtonWithTitle:buttonTitle];
     }
+    return alertView;
 }
 
 - (void)presentWebViewControllerForWebsite:(NSString *)websiteURL
